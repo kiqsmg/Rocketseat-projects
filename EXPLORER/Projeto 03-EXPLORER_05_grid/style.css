@@ -182,16 +182,22 @@ main{
     }
 }
 
-/**/
-@media (min-width: 720px) {
+.footer { 
+    font-family: ;
+    font-size: ;
+    font
+
+}
+@media (min-width: 700px) {
 
     body {
         padding: 8rem;
     }
 
     main {
-        max-width: 1280px; /*Aqui podemos deixar valor fixo pq é apenas um fator limitante, n valor real da caixa*/
+        max-width: 1020px; /*Aqui podemos deixar valor fixo pq é apenas um fator limitante, n valor real da caixa*/
         display: flex;
+        gap: 10rem;
     }
 
     /*Primeiro nivel de div dentro da main main> div*/
