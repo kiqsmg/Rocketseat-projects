@@ -119,11 +119,11 @@ sayMyName(
 function Person(name) {
     this.name = name    //this é referente ao mayk que esta la fora
 }
-const mayk = new Person("Mayk")  //função construtora que vai voltar um objeto pra function Person acima
-const joao = new Person("João")
+const Mayk = new Person("Mayk")  //função construtora que vai voltar um objeto pra function Person acima
+const Joao = new Person("João")
 
-console.log(mayk)
-console.log(joao)
+console.log(Mayk)
+console.log(Joao)
 
 
 
@@ -136,8 +136,8 @@ function Person(name) {
         return "andando"
     }
 }
-const mayk = new Person("Mayk")  //função construtora que vai voltar um objeto pra function Person acima
-const joao = new Person("João")
+const Mayk = new Person("Mayk")  //função construtora que vai voltar um objeto pra function Person acima
+const Joao = new Person("João")
 
 console.log(mayk.walk())
 console.log(joao.walk())   //vao devolver "andando"

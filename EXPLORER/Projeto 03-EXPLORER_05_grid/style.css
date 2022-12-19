@@ -182,25 +182,22 @@ main{
     }
 }
 
-.footer { 
-    font-family: ;
-    font-size: ;
-    font
 
-}
+
+/*}
 @media (min-width: 700px) {
 
-    body {
+    .page {
         padding: 8rem;
     }
 
     main {
-        max-width: 1020px; /*Aqui podemos deixar valor fixo pq é apenas um fator limitante, n valor real da caixa*/
+        max-width: 1020px; /*Aqui podemos deixar valor fixo pq é apenas um fator limitante, n valor real da caixa
         display: flex;
         gap: 10rem;
     }
 
-    /*Primeiro nivel de div dentro da main main> div*/
+    /*Primeiro nivel de div dentro da main main> div
     main > div {
         max-width: 484px;
     }
@@ -208,6 +205,6 @@ main{
     ul li {
         gap: 5.3rem;
         max-width: 450px;
-        align-items: center;   /*Alinhar numeros span com as informações da li*/
+        align-items: center;   /*Alinhar numeros span com as informações da li
     }
-}
+}*/
