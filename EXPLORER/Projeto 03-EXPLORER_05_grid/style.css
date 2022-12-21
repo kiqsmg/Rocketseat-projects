@@ -110,9 +110,17 @@ main{
 .card {
     position: relative;
 
-    height: fit-content;
-    
+    height: fit-content;   
 }
+
+.cards .card:nth-child(5) {
+    display: none;
+}
+
+.cards .card:nth-child(6) {
+    display: none;
+}
+
 .card img {
     height: auto;
     width: 32.0rem;
@@ -250,12 +258,20 @@ footer {
 
     
     main {
-        display: grid;
+        display: flex;
+        justify-content: start;
 
         padding-left: 9.8rem;
         padding-top: 6.4rem;
     }
 
+    .cards .card:nth-child(5) {
+        display: inline;
+    }
+    
+    .cards .card:nth-child(6) {
+        display: inline;
+    }
 
     .cards {
         grid-template-areas:
@@ -269,19 +285,19 @@ footer {
       .cards .card:nth-child(1) {     
         grid-area: a;
       }
-      .cards .card:nth-child(2) {    /*grande*/
+      .cards .card:nth-child(2) {   
         grid-area: b;
       }
-      .cards .card:nth-child(1) {
+      .cards .card:nth-child(5) {
         grid-area: c;
       }
       .cards .card:nth-child(4) {
         grid-area: d;
       }
-      .cards .card:nth-child(3) {    /*média*/
+      .cards .card:nth-child(3) {  
         grid-area: f;
       }
-      .cards .card:nth-child(4) {    /*pequena*/
+      .cards .card:nth-child(6) {   
         grid-area: e;
       }
 

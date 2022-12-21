@@ -6,7 +6,7 @@
 *3 Palavras reservadas 
 var 
 let
-cont
+const
 
 
 
