@@ -1,0 +1,170 @@
+Estudamos sintaxe básica da linguagem JavaScript
+
+
+----------VARIAVEIS----------
+Estudamos a diferença entre variavis const ; let; var...
+Sendo const utilizada quando criamos uma constante que naõ iremos mudar o valor 
+Let é utilizado sempre que queremos usar valores/variaveis mutaveis "let it change"
+
+Var dentro de colchetes vai pra fora dos colchetes, let fica entro do endentamento!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+----------Tipos de Dados----------
+String-
+Number-
+Boolean-  True/False
+undefined- indefinida
+null- deveria ter um objeto aqui mas nao tem nada
+
+
+
+
+
+
+
+
+
+----------Estrutura de Dados----------
+
+Array
+const myArray = [1, 2, "a", 'b', true]
+//array aceita tipos de dados diferentes no JavaScript   !!!!!
+
+Object
+const myObject = { property: "value" }
+
+
+
+
+
+
+
+
+
+
+
+----------Funções----------
+
+Named:
+function myFunction() {}
+
+Anonymous:
+const myFunction = function() {}
+
+Arrow:
+const myFunction = () => {}
+
+Arguments e Return
+function sum(a, b) {
+    return a+ b
+}
+
+const sum = (a, b) => a+ básica
+
+
+Execução...   
+myFunction()    //isso executa
+const mySum = sum(1, 2) //aqui colocamos os argumentos 1 e 2 
+
+
+
+
+
+
+
+
+
+
+
+----------Fluxo de Aplicação----------
+
+If, else if, else:
+
+While:
+Estrutura de repetição enqunto tal coisa for verdadeira (ideia de loop)
+let play = true
+while(play) {
+}
+
+
+For:
+tradicional
+!!!! geralmente começamos com a criação de uma variavel de controle !!!!
+
+let text = "abc"
+for (let i = 0; i < text.length; i++) {
+    alert(text[i] )
+//vai mostrar alert letra por letra da variavel let
+var de controle--> verif. o tam.--> incrementar um algaritmo ao i caso ainda passe por essa condição
+
+
+
+For ...of:
+const myArray = ["maça", "banana"]
+for(let fruit of myArray) {
+    alert(fruit)
+}
+//vai me entregar cada item da array, um a um
+
+
+
+
+
+
+
+
+
+
+----------Operadores----------
+Matematicos:
+()
+*
+**
+/
+%
++
+-
+
+
+Lógicos:
+&&  // E logico
+||  // OU logico
+!  // Não logico
+
+
+Relacional:
+>
+<
+>=
+<=
+==  igualdade
+=== estritamente igual (os dois tem que ser string ou os dois tem que ser Number)
+!= desigualdade
+!== estritamente diferentes
+
+
+Reatribuição de valor:
+
+let number = 1
+number *= 2
+//vai dar number =2
+
+
+
+
+----------Outros Operadores----------
+typeof
+++ incremento
+-- decrement                 //se colocar --number o numero que aparece sera o resultado, caso seja number-- o resultado fica pra depois
+{} objeto vazio ou bloco de codigo
+[] array vazio
+, separam elementos de array ou propriedades de objeto
+
+
