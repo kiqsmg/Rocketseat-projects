@@ -1,0 +1,26 @@
+Breve resumo sobre o que aprendemos nessa aula...
+
+
+
+
+
+
+DOM
+Document Object Model:
+Interface para fazer o JavaScript conversar com o HTML
+
+
+---DOM não é javascript, é uma representação do html em formato de um objeto de javascript
+
+const h1 = document.querySelector("h1")
+h1                     //para pegar o h1 da pagina que é um elemento
+
+console.log(h1.innerText) pra pegar valor, tag,... nesse caso o texto do h1
+
+
+
+
+
+
+const links = document.querySelectorAll("a")
+links                 //para pegar a lista de links da pagina (node list)
