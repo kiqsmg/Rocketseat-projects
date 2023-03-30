@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--     Preconnect     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biscoito da Sorte</title>
 
+    <!--     Style     -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital@1&family=Fasthand&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <main>
         <div class="container-01">
-            <h1>Qual é a sua sorte de hoje?</h1>
+            <h1>Qual é a sua sorte<br/> de hoje?</h1>
 
             <p>Abra o biscoito e descubra!</p>
 
-            <img src="biscoito.svg" alt="Desenho de um biscoito da sorte com um papel saindo dele.">
+            <img src="assets/biscoito.svg" alt="Desenho de um biscoito da sorte com um papel saindo dele.">
         </div>
 
-        <div class="container-02 hide">
-            <h1>Aqui está a sua sorte de hoje:</h1>
+        <div class="container-02">
+            <div class="main">
+                <h1>Aqui está a sua sorte<br/> de hoje:</h1>
 
-            <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+                <div class="sorte">
+                    <p>Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.</p>
+                </div>
 
-            <img src="biscoitoAberto.svg" alt="Desenho de um biscoito da sorte com um papel saindo dele.">
+                <img src="./assets/biscoitoAberto.svg" alt="Desenho de um biscoito da sorte com um papel saindo dele.">
 
-            <button>Abrir outro biscoito</button>
+                <button>Abrir outro biscoito</button>
+            </div>
         </div>
     </main>
     <script src="main.js"></script>
