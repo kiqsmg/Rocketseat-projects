@@ -34,7 +34,12 @@ main {
 }
 
 /*---------- Container-01 ----------*/
-.container-01 {
+
+.hide {
+  visibility: hidden;
+}
+
+.screen1 {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -49,7 +54,7 @@ main {
     border-radius: 5px;
 }
 
-.container-01 h1 {
+.screen1 h1 {
     margin-top: 4.8rem;
     color: black;
     font-family: 'Montserrat', 'sans-serif';
@@ -63,7 +68,7 @@ main {
     text-align: center;
 }
 
-.container-01 p {
+.screen1 p {
     margin-top: 1.4rem;
     color: black;
     font-family: 'DM Sans';
@@ -72,12 +77,12 @@ main {
     font-size: 1.5rem;
     line-height: 2.0rem;
 }
-.container-01 button {
+.screen1 button {
     border: none;
     background: none;
 }
 
-.container-01 img:hover {
+.screen1 img:hover {
       /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
 
@@ -87,13 +92,9 @@ main {
 
 
 /*---------- Container-02 ----------*/
-.container-02 .open{
-    visibility: visible;
-}
 
-.container-02 {
+.screen2 {
     position: absolute;
-    visibility: hidden;
 
     display: flex;
     flex-direction: row;
@@ -117,7 +118,7 @@ main {
 }
 
 
-.container-02 h1 {
+.screen2 h1 {
     color: black;
     font-family: 'Montserrat', 'sans-serif';
     font-style: bold;
@@ -130,7 +131,7 @@ main {
     text-align: center;
 }
 
-.container-02 .sorte {
+.screen2 .sorte {
     margin-top: 17px;
     display: flex;
     flex-direction: row;
@@ -145,7 +146,7 @@ main {
     background: #E4EDF1;
     box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
 }
-.container-02 p {
+.screen2 p {
     padding: 10px;
     font-family: 'Fasthand', 'sans-serif';
     font-size: 20px;
@@ -156,13 +157,13 @@ main {
 
 }
 
-.container-02 img {
+.screen2 img {
     margin-top: 17px;
     width: 300px;
     height: 200px;
 }
 
-.container-02 button {
+.screen2 button {
     background: #FF9500;
     width: 174px;
     height: 52px;
