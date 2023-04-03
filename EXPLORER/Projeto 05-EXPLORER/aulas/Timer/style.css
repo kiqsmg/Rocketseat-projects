@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*Make border size by box border*/
+}
+
+:root {
+    --bg-color: #121214;
+
+    --base-color: 194;
+    --primary-color: hsl(var(--base-color), 100%, 63%, 0.13); /*color based on base-color*/
+    --bg-primary-light: hsl(var(--base-color), 100%, 63%); /*color based on base-color*/
+    --text-color: #ffffff;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+    font-family: 'Roboto', 'sans-serif';
+
+    display: grid;
+    min-height: 100vh;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.play svg path, .pause svg path, .sound-on svg path {
+    fill: var(--bg-primary-light);
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);   /*we do this so the buttons will adapt size with the screen*/
+}
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+#timer {
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+
+    display: flex; /*Elements side by side without space in-between (0 gap)*/
+
+    margin-bottom: 1.6rem;
+}
+
+#controls {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3.2rem;
+
+    border-radius: 9999px ;
+
+    width: clamp(10rem, 10rem +30vw, 22.8rem);  /*1-Minimun size, adapting size, maximun size*/
+    height: clamp(8rem, 5rem + 10vh, 10.8rem);  /*The middle one is the ideal size*/
+}
+
+
+footer {
+    align-self: end;
+    justify-self: end;
+
+    padding: 0 4rem 3.2rem 0;
+}
