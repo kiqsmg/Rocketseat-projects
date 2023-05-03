@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*-------------------- Colors --------------------*/
+    --bg-color: #FFFFFF;
+    --tm-color: #323238;
+    --cd-color: #E1E1E6;
+    --cd-hover-color: #02799D;
+    --icon-color: black;
+    --icon-hover-color: #FFFFFF;
+
+    /*-------------------- Fonts-sizes --------------------*/
+    font-size: 62.5%;
+
+
+
+    /*-------------------- Font-Family --------------------*/
+    --ff-timer: 'Roboto', 'sans-serifs';
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    border-radius: 1rem;
+    width: 82.1rem;
+    height: 33.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#timer {
+    width: 32.1rem;
+    height: 21.3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#time {
+    display: flex;
+
+    font-family: var(--ff-timer);
+    font-weight: 500;
+    font-size: 12.1rem;
+    line-height: 148p;
+    font-style: normal;
+
+    color: var(--tm-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#buttons {
+    margin-bottom: 0;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 3.8rem;
+    flex-direction: row;
+}
+.play, .stop, .plus, .minus{
+    background: transparent;
+    border: none;
+}
+
+#sons {
+    width: 30.8rem;
+    height: 33.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row01, .row02 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-forest, .card-rain, .card-coffe, .card-firepit {
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 24px;
+    background-color: var(--cd-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
