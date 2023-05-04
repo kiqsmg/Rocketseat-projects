@@ -74,9 +74,29 @@ main {
     gap: 3.8rem;
     flex-direction: row;
 }
-.play, .stop, .plus, .minus{
+.hide {
+    display: none;
+}
+.paude {
+    color: black;
+    background-color: black;
+}
+.play,
+.pause,
+.stop,
+.plus,
+.minus {
     background: transparent;
     border: none;
+}
+
+.play:hover,
+.pause:hover,
+.stop:hover,
+.plus:hover,
+.minus:hover {
+    transform: scale(1.1);
+    transition: transform .6s ease;
 }
 
 #sons {
@@ -88,12 +108,16 @@ main {
     justify-content: space-between;
 }
 
-.row01, .row02 {
+.row01,
+.row02 {
     display: flex;
     justify-content: space-between;
 }
 
-.card-forest, .card-rain, .card-coffe, .card-firepit {
+.card-forest,
+.card-rain,
+.card-coffe,
+.card-firepit {
     width: 13.8rem;
     height: 15.2rem;
     border-radius: 24px;
@@ -102,4 +126,28 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: none;
 }
+
+.card-forest:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+.card-rain:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+.card-coffe:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+.card-firepit:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: transform .6s ease;
+}
+
