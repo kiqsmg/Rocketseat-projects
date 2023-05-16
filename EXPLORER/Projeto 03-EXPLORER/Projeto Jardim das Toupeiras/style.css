@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    width: 100vw;
+    height: 1024px;
+    margin: 0 auto;
+    background-image: url("./assets/fundo.svg");
+}
+
+.toupeiras {
+    margin: 300px auto 0;
+    width: 1050px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.mole {
+    width: 221.81px;
+    height: 168.11px;
+    background-image: url(/assets/toupeira1.svg);
+}
+
+.animated1 {
+    animation: toupeira 0.8s;
+    animation-delay: 10s;
+    animation-timing-function: 1;
+}
+
+.animated2 {
+    animation: toupeira 0.8s;
+    animation-delay: 3s;
+    animation-timing-function: 1;
+}
+
+.animated3 {
+    animation: toupeira 0.8s;
+    animation-delay: 7s;
+    animation-timing-function: 1;
+}
+
+
+@keyframes toupeira {
+    0% {
+        background-image: url(./assets/toupeira1.svg);
+    }
+    20% {
+        background-image: url(./assets/toupeira2.svg);
+    }
+    40% {
+        background-image: url(./assets/toupeira3.svg);
+    }
+    60% {
+        background-image: url(./assets/toupeira4.svg);
+    }
+    80% {
+        background-image: url(./assets/toupeira5.svg);
+    }
+    100% {
+        background-image: url(./assets/toupeira6.svg);
+    }
+    
+}
