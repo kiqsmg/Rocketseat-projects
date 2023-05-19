@@ -9,6 +9,10 @@
     /*10px*/
     --ff-main: 'Mulish', 'sans-serif';
 
+    --fs-mob-small: 1.6rem;
+    --fs-mob-medium: 2.0rem;
+    --fs-mob-big: 3.0rem;
+    --fs-mob-xbig: 3.2rem;
 
     /*          Colors          */
 
@@ -22,7 +26,7 @@
 
 
 .main {
-    width: 43rem;
+    width: 100vw;
     height: 100vh;
 
     display: flex;
@@ -35,13 +39,11 @@
     display: flex;
     flex-direction: column;
     height: 67.9rem;
-    width: 43.0rem;
 
     align-items: center;
 }
 
 .container1 img {
-    width: 36.4rem;
     height: 37.0rem;
 
     margin-bottom: 1.7rem;
@@ -50,7 +52,7 @@
 .container1 h1 {
     font-family: var(--ff-main);
     font-weight: 900;
-    font-size: 32px;
+    font-size: var(--fs-mob-xbig);
     color: var(--big-text-color);
     margin-bottom: 0.5rem;
 
@@ -60,7 +62,7 @@
 .container1 p {
     font-family: var(--ff-main);
     font-weight: 600;
-    font-size: 20px;
+    font-size: var(--fs-mob-medium);
     color: var(--small-text-color);
     margin-bottom: 3.5rem;
 
@@ -81,11 +83,16 @@
 
 .container2 {
     background: var(--gradient-background);
-    height: 124.2rem;
-    width: 43.0rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card-container {
+    width: 100%;
+
     padding: 53px 39px 55px 39px;
     display: flex;
     flex-direction: column;
@@ -93,8 +100,7 @@
 }
 
 .card {
-    width: 35.2rem;
-    height: 33.8rem;
+    height: 100%;
 
     border-radius: 2rem;
     padding: 26px;
@@ -109,7 +115,7 @@
 .card h2 {
     font-family: var(--ff-main);
     font-weight: 900;
-    font-size: 30px;
+    font-size: var(--fs-mob-big);
     line-height: 3.7rem;
     font-style: normal;
 
@@ -121,9 +127,12 @@
 }
 
 .card p {
+    width: 26.5rem;
+    height: 100%;
+
     font-family: var(--ff-main);
     font-weight: 600;
-    font-size: 16px;
+    font-size: var(--fs-mob-small);
     line-height: 20px;
     font-style: normal;
 
@@ -134,17 +143,18 @@
 .container3 {
     background-color: var(--background-color);
     height: 56.5rem;
-    width: 43.0rem;
+    padding: 7.8rem 3.9rem 6.5rem 3.9rem;
 
-    padding: 78px 39px 65px 39px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.input-wrapper {}
 
 .container3 h1 {
     font-family: var(--ff-main);
     font-weight: 900;
-    font-size: 30px;
+    font-size: var(--fs-mob-xbig);
     line-height: 3.7rem;
     font-style: normal;
 
@@ -154,6 +164,9 @@
 
 fieldset {
     border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 #name,
@@ -164,9 +177,126 @@ fieldset {
     background: none;
 }
 
-#name {
-    border: 2px solid #312D64;
-    border-radius: 16px;
-    width: 348px;
-    height: 48px;
+#name,
+#email {
+    border: 0.2rem solid #312D64;
+    border-radius: 1.6rem;
+    width: 34.8rem;
+    height: 4.8rem;
+
+    text-align: center;
 }
+
+#textinput {
+    border: 0.2rem solid #312D64;
+    border-radius: 1.6rem;
+    width: 34.8rem;
+    height: 12.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder {
+  font-weight: 600;
+  font-size: var(--fs-mob-small);
+
+  color: var(--small-text-color);
+
+  padding-left: 1.6rem;
+  padding-top: 1.2rem;
+
+  display: flex;
+}
+
+#name {
+  background: url(/IMG/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+  background: url(/IMG/at.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+
+.button {
+    background: var(--gradient-background);
+    color: var(--white-color);
+
+    font-size: var(--fs-mob-small);
+    font-weight: 700;
+    line-height: 2.4rem;
+
+    padding: 1rem 1.6rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: filter 200ms;
+
+    margin-top: 2.4rem;
+  }
+
+
+footer {
+    background: var(--gradient-background);
+    height: 7.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: var(--white-color);
+    font-family: var(--ff-main);
+
+    font-weight: 600;
+    font-size: var(--fs-mob-medium);
+    line-height: 2.4rem;
+}
+
+
+
+
+@media (min-width: 1440px) {
+
+
+    /*----------Global----------*/
+
+    .main {
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        align-items: center;
+    
+        background-color: var(--background-color);
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-rows: auto;
+        height: 83.6rem;
+
+    }
+
+    .container1 h1 {
+        font-size: 5.8rem;
+
+    }
+
+    .container1 p {
+        font-size: 3.2rem;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
