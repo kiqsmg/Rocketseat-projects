@@ -1,4 +1,4 @@
----------------------------------  Project Sem Limites  ---------------------------------
+------------------------------------------------------------------  Project Sem Limites  ------------------------------------------------------------------
 ![Alt Text](reaadme_img.svg)
 
 A project focused on responsivenes and Mobile First design and coding.
