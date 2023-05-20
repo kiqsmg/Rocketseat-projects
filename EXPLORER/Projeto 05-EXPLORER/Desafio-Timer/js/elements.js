@@ -12,6 +12,9 @@ const buttonSoundRain = document.querySelector('card-rain')
 const buttonSoundCoffe = document.querySelector('.card-coffe')
 const buttonSoundFirepit = document.querySelector('.card-firepit')
 
+const minutesDisplay = document.querySelector('.minutes')
+const secondsDisplay = document.querySelector('.seconds')
+
 export {
     buttonPlay,
     buttonPause,
@@ -22,4 +25,6 @@ export {
     buttonSoundRain,
     buttonSoundCoffe,
     buttonSoundFirepit,
+    minutesDisplay,
+    secondsDisplay
 }

@@ -10,6 +10,8 @@ import {
     buttonSoundRain,
     buttonSoundCoffe,
     buttonSoundFirepit,
+    minutesDisplay,
+    secondsDisplay
 } from "./elements.js"
 import Sounds from "./sound.js"
 
