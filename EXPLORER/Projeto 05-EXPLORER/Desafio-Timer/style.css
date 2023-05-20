@@ -74,13 +74,16 @@ main {
     gap: 3.8rem;
     flex-direction: row;
 }
+
 .hide {
     display: none;
 }
+
 .paude {
     color: black;
     background-color: black;
 }
+
 .play,
 .pause,
 .stop,
@@ -135,19 +138,27 @@ main {
     transform: scale(1.05);
     transition: transform .6s ease;
 }
+
 .card-rain:hover {
     opacity: 0.8;
     transform: scale(1.05);
     transition: transform .6s ease;
 }
+
 .card-coffe:hover {
     opacity: 0.8;
     transform: scale(1.05);
     transition: transform .6s ease;
 }
+
 .card-firepit:hover {
     opacity: 0.8;
     transform: scale(1.05);
     transition: transform .6s ease;
 }
 
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+}

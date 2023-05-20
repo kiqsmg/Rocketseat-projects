@@ -10,7 +10,7 @@ const buttonMinus = document.querySelector('.minus')
 const buttonSoundForest = document.querySelector('.card-forest')
 const buttonSoundRain = document.querySelector('card-rain')
 const buttonSoundCoffe = document.querySelector('.card-coffe')
-const buttonSounfFirepit = document.querySelector('.card-firepit')
+const buttonSoundFirepit = document.querySelector('.card-firepit')
 
 export {
     buttonPlay,
@@ -21,5 +21,5 @@ export {
     buttonSoundForest,
     buttonSoundRain,
     buttonSoundCoffe,
-    buttonSounfFirepit,
+    buttonSoundFirepit,
 }
