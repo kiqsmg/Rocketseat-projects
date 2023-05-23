@@ -119,6 +119,7 @@ table tr:nth-child(even) {
 table tr:nth-child(odd) {
   background: #ddd;
 }
+
 /*Deixar tabela com linhas cinzas mais escuras e mais claras intercaladas*/
 
 
