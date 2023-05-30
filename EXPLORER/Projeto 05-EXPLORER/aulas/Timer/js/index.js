@@ -50,7 +50,7 @@ buttonSoundOff.addEventListener('click', function () {
     buttonSoundOn.classList.remove('hide')
     buttonSoundOff.classList.add('hide')
     sound.bgAudio.play()
-    
+
 })
 
 buttonSoundOn.addEventListener('click', function () {

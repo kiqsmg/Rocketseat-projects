@@ -46,6 +46,14 @@ buttonStop.addEventListener('click', function () {
     controls.reset()
     timer.reset()
 })
+//PLUS MINUS------------------------------------------------------------
+
+buttonPlus.addEventListener('click', function () {
+    controls.plus()
+})
+
+//PLUS MINUS------------------------------------------------------------
+
 
 buttonSoundForest.addEventListener('click', function () {
     if (sound.bgForest.paused) {
@@ -80,8 +88,8 @@ buttonSoundCoffe.addEventListener('click', function () {
 })
 
 
-buttonSoundForest.addEventListener('click', function () {
-    let newMinutes = 0
+buttonPlus.addEventListener('click', function () {
+    let newMinutes = controls.plus()
 
     if (!newMinutes) {
         timer.reset()
@@ -92,6 +100,18 @@ buttonSoundForest.addEventListener('click', function () {
     timer.updateMinutes(newMinutes)
 })
 
+
+buttonMinus.addEventListener('click', function () {
+    let newMinutes = controls.minus()
+
+    if (!newMinutes) {
+        timer.reset()
+        return
+    }
+
+    timer.updateDisplay(newMinutes, 0)
+    timer.updateMinutes(newMinutes)
+})
 
 
 

@@ -1,3 +1,8 @@
+import {
+    minutesDisplay,
+} from "./elements.js"
+
+
 export default function controls({
     buttonPlay,
     buttonPause,
@@ -22,13 +27,13 @@ export default function controls({
 
 
     function plus() {
-        let newMinutes = newMinutes + 1
-
+        let newNumber = (Number(minutesDisplay.textContent) + 5)
+        newMinutes = newNumber
         return newMinutes
     }
 
     function minus() {
-        let newMinutes = newMinutes - 1
+        let newMinutes = (Number(minutesDisplay.textContent) - 5)
 
         return newMinutes
     }
