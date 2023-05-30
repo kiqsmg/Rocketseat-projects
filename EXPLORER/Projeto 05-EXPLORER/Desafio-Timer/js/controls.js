@@ -22,18 +22,18 @@ export default function controls({
 
 
     function plus() {
-        newMinutes = newMinutes++
+        let newMinutes = newMinutes + 1
 
         return newMinutes
     }
 
     function minus() {
-        newMinutes = newMinutes--
+        let newMinutes = newMinutes - 1
 
         return newMinutes
     }
 
     return {
-        play, pause, reset, plus, minus, newMinutes
+        play, pause, reset, plus, minus
     }
 }

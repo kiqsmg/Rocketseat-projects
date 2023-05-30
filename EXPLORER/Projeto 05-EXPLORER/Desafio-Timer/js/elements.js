@@ -8,7 +8,7 @@ const buttonMinus = document.querySelector('.minus')
 
 
 const buttonSoundForest = document.querySelector('.card-forest')
-const buttonSoundRain = document.querySelector('card-rain')
+const buttonSoundRain = document.querySelector('.card-rain')
 const buttonSoundCoffe = document.querySelector('.card-coffe')
 const buttonSoundFirepit = document.querySelector('.card-firepit')
 
@@ -26,5 +26,5 @@ export {
     buttonSoundCoffe,
     buttonSoundFirepit,
     minutesDisplay,
-    secondsDisplay
+    secondsDisplay,
 }

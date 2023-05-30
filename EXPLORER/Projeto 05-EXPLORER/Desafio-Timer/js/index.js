@@ -48,39 +48,34 @@ buttonStop.addEventListener('click', function () {
 })
 
 buttonSoundForest.addEventListener('click', function () {
-    if (sound.buttonPressForest.paused || sound.buttonSoundCoffe) {
-        sound.buttonPressForest.play()
-    }
-    if (sound.buttonPressForest.play) {
-        sound.buttonPressForest.pause()
+    if (sound.bgForest.paused) {
+        sound.bgForest.play()
+    } else {
+        sound.bgForest.pause()
     }
 })
 
 buttonSoundRain.addEventListener('click', function () {
-    if (sound.buttonPressRain.paused || sound.buttonSoundCoffe) {
-        sound.buttonPressRain.play()
-    }
-    if (sound.buttonPressRain.play) {
-        sound.buttonPressRain.pause()
+    if (sound.bgRain.paused) {
+        sound.bgRain.play()
+    } else {
+        sound.bgRain.pause()
     }
 })
 
 buttonSoundFirepit.addEventListener('click', function () {
-    if (sound.buttonPressFirepit.paused || sound.buttonSoundCoffe) {
-        sound.buttonPressFirepit.play()
-    }
-    if (sound.buttonPressFirepit.play) {
-        sound.buttonPressFirepit.pause()
+    if (sound.bgFirepit.paused) {
+        sound.bgFirepit.play()
+    } else {
+        sound.bgFirepit.pause()
     }
 })
 
 buttonSoundCoffe.addEventListener('click', function () {
-
-    if (sound.buttonPressCoffe.paused || sound.buttonSoundCoffe) {
-        sound.buttonPressCoffe.play()
-    }
-    if (sound.buttonPressCoffe.play) {
-        sound.buttonPressCoffe.pause()
+    if (sound.bgCoffe.paused) {
+        sound.bgCoffe.play()
+    } else {
+        sound.bgCoffe.pause()
     }
 })
 
