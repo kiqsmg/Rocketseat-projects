@@ -6,6 +6,9 @@ const buttonStop = document.querySelector('.stop')
 const buttonPlus = document.querySelector('.plus')
 const buttonMinus = document.querySelector('.minus')
 
+const buttonLight = document.querySelector('.screenMode-light')
+const buttonDark = document.querySelector('.screenMode-dark')
+
 
 const buttonSoundForest = document.querySelector('.card-forest')
 const buttonSoundRain = document.querySelector('.card-rain')
@@ -27,4 +30,6 @@ export {
     buttonSoundFirepit,
     minutesDisplay,
     secondsDisplay,
+    buttonDark,
+    buttonLight,
 }

@@ -11,10 +11,14 @@ import {
     buttonSoundCoffe,
     buttonSoundFirepit,
     minutesDisplay,
-    secondsDisplay
+    secondsDisplay,
+    buttonDark,
+    buttonLight,
 } from "./elements.js"
 import Sounds from "./sound.js"
 
+
+const sound = Sounds()
 
 const controls = Controls({
     buttonPlay,
@@ -27,8 +31,6 @@ const timer = Timer({
     secondsDisplay,
     resetControls: controls.reset
 })
-
-const sound = Sounds()
 
 buttonPlay.addEventListener('click', function () {
     controls.play()
@@ -46,13 +48,6 @@ buttonStop.addEventListener('click', function () {
     controls.reset()
     timer.reset()
 })
-//PLUS MINUS------------------------------------------------------------
-
-buttonPlus.addEventListener('click', function () {
-    controls.plus()
-})
-
-//PLUS MINUS------------------------------------------------------------
 
 
 buttonSoundForest.addEventListener('click', function () {
@@ -88,6 +83,9 @@ buttonSoundCoffe.addEventListener('click', function () {
 })
 
 
+
+//PLUS MINUS------------------------------------------------------------
+
 buttonPlus.addEventListener('click', function () {
     let newMinutes = controls.plus()
 
@@ -113,6 +111,32 @@ buttonMinus.addEventListener('click', function () {
     timer.updateMinutes(newMinutes)
 })
 
+//PLUS MINUS------------------------------------------------------------
 
 
+
+
+
+
+
+//Dark Mode------------------------------------------------------------
+buttonLight.addEventListener('click', function () {
+    buttonDark.classList.remove('hide')
+    buttonLight.classList.add('hide')
+    document.documentElement.style.setProperty('--bg-color', '#323238')
+    document.documentElement.style.setProperty('--tm-color', '#FFFFFF')
+    document.documentElement.style.setProperty('--icon-color', '#FFFFFF')
+})
+
+
+buttonDark.addEventListener('click', function () {
+    buttonDark.classList.add('hide')
+    buttonLight.classList.remove('hide')
+    document.documentElement.style.setProperty('--bg-color', '#FFFFFF')
+    document.documentElement.style.setProperty('--tm-color', '#323238')
+    document.documentElement.style.setProperty('--icon-color', '#black')
+})
+
+
+//Dark Mode------------------------------------------------------------
 
