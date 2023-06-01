@@ -184,3 +184,12 @@ buttonDark.addEventListener('click', function () {
 
 //Dark Mode------------------------------------------------------------
 
+
+
+
+
+//Volume widget------------------------------------------------------------
+
+slider = document.querySelector("iinput");
+slider.oninput = function () {
+}
