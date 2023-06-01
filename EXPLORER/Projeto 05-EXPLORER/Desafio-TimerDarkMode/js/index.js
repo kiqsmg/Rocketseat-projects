@@ -126,6 +126,30 @@ buttonLight.addEventListener('click', function () {
     document.documentElement.style.setProperty('--bg-color', '#323238')
     document.documentElement.style.setProperty('--tm-color', '#FFFFFF')
     document.documentElement.style.setProperty('--icon-color', '#FFFFFF')
+
+
+
+    const playSvg = buttonPlay.querySelector('svg');
+    const playPathElement = playSvg.querySelector('path');
+    playPathElement.setAttribute('fill', '#FFFFFF');
+
+
+    const stopSvg = buttonStop.querySelector('svg');
+    const stopPathElement = stopSvg.querySelector('path');
+    stopPathElement.setAttribute('fill', '#FFFFFF');
+
+
+    const plusSvg = buttonPlus.querySelector('svg');
+    const plusPathElement = plusSvg.querySelector('path');
+    plusPathElement.setAttribute('fill', '#FFFFFF');
+
+
+    const minusSvg = buttonMinus.querySelector('svg');
+    const minusPathElement = minusSvg.querySelector('path');
+    minusPathElement.setAttribute('fill', '#FFFFFF');
+
+
+
 })
 
 
@@ -135,6 +159,26 @@ buttonDark.addEventListener('click', function () {
     document.documentElement.style.setProperty('--bg-color', '#FFFFFF')
     document.documentElement.style.setProperty('--tm-color', '#323238')
     document.documentElement.style.setProperty('--icon-color', '#black')
+
+
+    const playSvg = buttonPlay.querySelector('svg');
+    const playPathElement = playSvg.querySelector('path');
+    playPathElement.setAttribute('fill', '#323238');
+
+
+    const stopSvg = buttonStop.querySelector('svg');
+    const stopPathElement = stopSvg.querySelector('path');
+    stopPathElement.setAttribute('fill', '#323238');
+
+
+    const plusSvg = buttonPlus.querySelector('svg');
+    const plusPathElement = plusSvg.querySelector('path');
+    plusPathElement.setAttribute('fill', '#323238');
+
+
+    const minusSvg = buttonMinus.querySelector('svg');
+    const minusPathElement = minusSvg.querySelector('path');
+    minusPathElement.setAttribute('fill', '#323238');
 })
 
 
