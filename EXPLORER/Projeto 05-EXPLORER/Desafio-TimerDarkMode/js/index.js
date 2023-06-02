@@ -14,6 +14,10 @@ import {
     secondsDisplay,
     buttonDark,
     buttonLight,
+    firepitvolumeslider,
+    forestvolumeslider,
+    rainvolumeslider,
+    coffevolumeslider,
 } from "./elements.js"
 import Sounds from "./sound.js"
 
@@ -190,6 +194,25 @@ buttonDark.addEventListener('click', function () {
 
 //Volume widget------------------------------------------------------------
 
-slider = document.querySelector("iinput");
-slider.oninput = function () {
-}
+
+firepitvolumeslider.addEventListener('input', function(e) {
+    const volume = e.currentTarget.value / 100;
+    sound.bgFirepit.volume = volume;
+})
+
+forestvolumeslider.addEventListener('input', function(e) {
+    const volume = e.currentTarget.value / 100;
+    sound.bgForest.volume = volume;
+})
+
+rainvolumeslider.addEventListener('input', function(e) {
+    const volume = e.currentTarget.value / 100;
+    sound.bgRain.volume = volume;
+})
+
+coffevolumeslider.addEventListener('input', function(e) {
+    const volume = e.currentTarget.value / 100;
+    sound.bgCoffe.volume = volume;
+})
+
+

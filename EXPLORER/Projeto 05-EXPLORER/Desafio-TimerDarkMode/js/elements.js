@@ -10,6 +10,14 @@ const buttonLight = document.querySelector('.screenMode-light')
 const buttonDark = document.querySelector('.screenMode-dark')
 
 
+const firepitvolumeslider = document.getElementById("firepit-slider")
+const forestvolumeslider = document.getElementById("forest-slider")
+const rainvolumeslider = document.getElementById("rain-slider")
+const coffevolumeslider = document.getElementById("coffe-slider")
+
+
+
+
 const buttonSoundForest = document.querySelector('.card-forest')
 const buttonSoundRain = document.querySelector('.card-rain')
 const buttonSoundCoffe = document.querySelector('.card-coffe')
@@ -32,4 +40,9 @@ export {
     secondsDisplay,
     buttonDark,
     buttonLight,
+    firepitvolumeslider,
+    forestvolumeslider,
+    rainvolumeslider,
+    coffevolumeslider,
+
 }
