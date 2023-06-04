@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,10 +9,185 @@
 
     --ff-primary: 'Roboto', sans-serif;
     --text-color: #E1E1E6;
+    --text-color-header: #7C7C8A;
 
     --bg-color: #000000;
     --tb-even-bg-color: #06161B;
     --tb-par-bg-color: #06181C;
     --tb-header-color: #092D38;
+
+}
+
+
+/*-------------------------------------- It is used for acessibility only --------------------------------------*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 11.5rem;
+
+
+    font-family: var(--ff-primary);
+}
+
+header {
+    width: 112.0rem;
+    height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    width: 18.6rem;
+    height: 3.2rem;
+}
+
+.search {
+    height: 4.8rem;
+    width: 64.0rem;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 46.2rem;
+    background-color: var(--tb-header-color);
+    appearance: none;
     
+    border: none;
+    border-radius: .5rem;
+}
+
+
+.search input::placeholder {
+    padding-left: 16px;
+    color: var(--text-color-header);
+}
+
+
+.search button {
+    height: 4.8rem;
+    width: 17.0rem;
+    border-radius: 5px;
+    
+    border: none;
+
+    cursor: pointer;
+}
+
+.search button:hover {
+    filter: brightness(1.2);
+    transform:scale(1.05);
+}
+
+
+main {
+    margin-top: 12.7rem;
+    width: 112.0rem;
+    height: 4.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+table {
+    width: 100%;
+   /* border-collapse: collapse; */
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background: var(--tb-even-bg-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+}
+
+table th:first-child {
+    border-top-left-radius: 1.2rem;
+}
+
+table th:last-child {
+    border-top-right-radius: 1.2rem;
+}
+
+
+/*Deixar tabela com linhas cinzas mais escuras e mais claras intercaladas*/
+table tr:nth-child(even) {
+    background: #eee;
+}
+
+table tr:nth-child(odd) {
+    background: #ddd;
+}
+
+/*Deixar tabela com linhas cinzas mais escuras e mais claras intercaladas*/
+
+
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td .remove {
+    background: none;
+    border: none;
+
+    color: red;
+}
+
+.followers {
+    color: green;
 }
