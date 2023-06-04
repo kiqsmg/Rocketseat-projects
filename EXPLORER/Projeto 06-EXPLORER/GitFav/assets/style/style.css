@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --text-color: #E1E1E6;
+
+    --bg-color: #000000;
+    --tb-even-bg-color: #06161B;
+    --tb-par-bg-color: #06181C;
+    --tb-header-color: #092D38;
+    
+}
