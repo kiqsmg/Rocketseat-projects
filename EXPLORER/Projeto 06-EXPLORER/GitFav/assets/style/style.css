@@ -11,10 +11,15 @@
     --text-color: #E1E1E6;
     --text-color-header: #7C7C8A;
 
+    --input-bg-color: #06181C;
+    ;
     --bg-color: #000000;
-    --tb-even-bg-color: #06161B;
-    --tb-par-bg-color: #06181C;
+    --tb-odd-bg-color: rgba(6, 22, 27, 0.5);
+    --tb-even-bg-color: rgba(6, 24, 28, 1);
+    ;
+    ;
     --tb-header-color: #092D38;
+    --remove-color: rgba(247, 90, 104, 1);
 
 }
 
@@ -73,11 +78,17 @@ header .logo {
 .search input {
     height: 4.8rem;
     width: 46.2rem;
-    background-color: var(--tb-par-bg-color);
+    background-color: var(--input-bg-color);
     appearance: none;
-    
+
     border: none;
     border-radius: .5rem;
+}
+
+/* Change the input text color so we can see in a dark background*/
+#input-search {
+    color: white;
+    padding: 2rem;
 }
 
 
@@ -91,39 +102,30 @@ header .logo {
     height: 4.8rem;
     width: 17.0rem;
     border-radius: 5px;
-    
+
     border: none;
 
     cursor: pointer;
 }
 
 .search button:hover {
-    filter: brightness(1.2);
-    transform:scale(1.05);
+    transform: scale(1.1);
 }
 
+table {
+    border-collapse: collapse;
 
-main {
     margin-top: 12.7rem;
     width: 112.0rem;
     height: 4.8rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-table {
-    width: 100%;
-   /* border-collapse: collapse; */
 }
 
 table * {
     font-size: 2.0rem;
     font-family: var(--ff-primary);
+    font-weight: 700;
     color: var(--text-color);
-
 }
 
 table th {
@@ -146,11 +148,11 @@ table th:last-child {
 
 /*Deixar tabela com linhas cinzas mais escuras e mais claras intercaladas*/
 table tr:nth-child(even) {
-    background: #eee;
+    background: var(--tb-even-bg-color);
 }
 
 table tr:nth-child(odd) {
-    background: #ddd;
+    background: var(--tb-odd-bg-color);
 }
 
 /*Deixar tabela com linhas cinzas mais escuras e mais claras intercaladas*/
@@ -163,15 +165,16 @@ table td {
 }
 
 td.user {
+    padding-left: 4.0rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.6rem;
 }
 
 
 td.user img {
-    width: 5rem;
-    height: 5rem;
+    width: 5.6rem;
+    height: 5.6rem;
 
     object-fit: cover;
     border-radius: 50%;
@@ -181,17 +184,31 @@ td.user a {
     text-decoration: none;
 }
 
-td.user a p {
-    font-weight: bold;
+td.user span {
+    font-weight: 400;
 }
 
 td .remove {
     background: none;
     border: none;
 
-    color: red;
+    color: var(--remove-color);
+
+    padding-left: 4.0rem;
+
+    cursor: pointer;
+}
+
+td .remove:hover {
+    transform: scale(1.1);
 }
 
 .followers {
-    color: green;
+    color: var(--text-color);
+    padding-left: 4.0rem;
+}
+
+.repositories {
+    color: var(--text-color);
+    padding-left: 4.0rem;
 }
