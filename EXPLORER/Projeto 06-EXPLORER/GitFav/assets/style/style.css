@@ -109,7 +109,8 @@ header .logo {
 }
 
 .search button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition: 0.4s ease;
 }
 
 table {
@@ -127,6 +128,35 @@ table * {
     font-weight: 700;
     color: var(--text-color);
 }
+
+
+.nenhum-favorito {
+    width: 112.0rem;
+    height: 62.4rem;
+
+    background: #030B0D;
+    border: 1px solid #4A808C;
+    border-radius: 0px 0px 12px 12px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nenhum-favorito p {
+    padding-left: 60px;
+    color: rgba(78, 84, 85, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 25px;
+}
+
+.hide {
+    display: none;
+}
+
 
 table th {
     background-color: var(--tb-header-color);
