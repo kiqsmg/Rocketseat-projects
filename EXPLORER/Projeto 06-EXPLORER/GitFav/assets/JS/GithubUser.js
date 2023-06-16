@@ -6,7 +6,7 @@ export class GithubUser {
 
         // Construct the API endpoint URL using the provided username
         const endpoint = `https://api.github.com/users/${username}`
-
+        
 
         // Use the fetch function to make a GET request to the API endpoint
         return fetch(endpoint)
