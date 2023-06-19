@@ -1,0 +1,12 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API desenvolvida o programa da RocketSeat",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "keywords": [],
+  "author": "Caique Sales de Miranda Gomes",
+  "license": "ISC"
+}
