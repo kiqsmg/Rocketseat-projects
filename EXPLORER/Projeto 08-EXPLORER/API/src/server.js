@@ -1,3 +1,5 @@
+require("express-async-errors");
+
 /*
 ----------------------------------- padrao geral de server.js -----------------------------------
 
@@ -24,8 +26,9 @@ const PORT = 3333;
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`)); //app fica escutando o PORT 
 */
 
-// 1º LOcal que é aberto no programa
+const AppError = require("./utils/AppError");
 
+// 1º LOcal que é aberto no programa
 const express = require("express");
 
 
@@ -37,9 +40,29 @@ app.use(express.json());
 
 
 // 2º Ele vai utilizar essas rotas (routes) na aplicação que está sendo feita, vai levar pra pasta index.js
-
 app.use(routes);
+
+
+app.use(( error, request, response, next) => {
+    if(error instanceof AppError) {
+        return response.status(error.statusCode).json({
+            status: "error", 
+            message: error.message
+        });
+    }
+
+    console.error(error);
+
+    return response.status(500).json({
+        status: "error",
+        message: "Internal server error",
+    });
+});
 
 
 const PORT = 3333;
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`)); //app fica escutando o PORT 
+
+
+
+// 9º Agora por ultimo iremos voltar o caminho feito até agora... Server vai devolvera resposta pro cliente
