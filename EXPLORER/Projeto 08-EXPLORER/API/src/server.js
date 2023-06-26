@@ -1,4 +1,5 @@
 require("express-async-errors");
+const database = require("./database/sqlite");
 
 /*
 ----------------------------------- padrao geral de server.js -----------------------------------
@@ -42,6 +43,7 @@ app.use(express.json());
 // 2º Ele vai utilizar essas rotas (routes) na aplicação que está sendo feita, vai levar pra pasta index.js
 app.use(routes);
 
+database();
 
 app.use(( error, request, response, next) => {
     if(error instanceof AppError) {
