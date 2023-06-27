@@ -1,5 +1,5 @@
 require("express-async-errors");
-const database = require("./database/sqlite");
+const migrationsRun = require("./database/sqlite/migrations");
 
 /*
 ----------------------------------- padrao geral de server.js -----------------------------------
@@ -33,17 +33,20 @@ const AppError = require("./utils/AppError");
 const express = require("express");
 
 
-const routes = require("./routes/index.js")
+const routes = require("./routes")  //const routes = require("./routes/index.js")
 
 
-const app = express(); //inicializar o express
+migrationsRun();
+
+
+const app = express(); //inicializar o express 
 app.use(express.json());
 
 
 // 2º Ele vai utilizar essas rotas (routes) na aplicação que está sendo feita, vai levar pra pasta index.js
 app.use(routes);
 
-database();
+
 
 app.use(( error, request, response, next) => {
     if(error instanceof AppError) {
