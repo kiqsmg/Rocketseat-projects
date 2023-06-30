@@ -26,6 +26,7 @@ const usersController = new UsersController();
 
 // 5º Chegamos nas rotas do usuario, e somos redirecionados para o controller correto => para o usersController.create
 usersRoutes.post("/", usersController.create);
+usersRoutes.put("/:id", usersController.update);
 // usersRoutes.post("/", myMiddleware, usersController.create); rota tem o (endereço, middleware, função controller)
 
 

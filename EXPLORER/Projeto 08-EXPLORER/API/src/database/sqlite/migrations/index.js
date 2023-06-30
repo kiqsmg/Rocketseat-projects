@@ -7,7 +7,7 @@ async function migrationsRun(){
         createUsers        //migrations
     ].join('');            //junta todas as migrations
 
-    sqliteConnection().then(db => db.exec(schemas)).catch(error => console.log(error));
+    sqliteConnection().then(db => db.exec(schemas)).catch(error => console.log(error)); //se der erro tem o catch error
 }
 
 
