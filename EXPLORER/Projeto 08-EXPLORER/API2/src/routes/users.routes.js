@@ -1,13 +1,16 @@
-import { Router } = require("express");
+const { Router } = require("express");
+
+const UsersController = require("../controllers/UsersController");
 
 const usersRoutes = Router();
 
+
+const usersController = new UsersController();
+
+
 //Query Params  ... não é obrigatorio ter os parametros para abrir a rota!
-usersRoutes.post("/users", (request, response) => {
-    const { name, email, password } = request.body;
+usersRoutes.post("/", usersController.create);
 
-    //Enviar em formato JSON =>
-    response.json({ name, email, password });
-});
 
+//exportar userRoutes 
 module.exports = usersRoutes;
