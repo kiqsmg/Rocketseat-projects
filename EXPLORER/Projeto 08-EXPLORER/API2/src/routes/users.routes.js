@@ -10,6 +10,7 @@ const usersController = new UsersController();
 
 //Query Params  ... não é obrigatorio ter os parametros para abrir a rota!
 usersRoutes.post("/", usersController.create);
+usersRoutes.put("/:id", usersController.update);
 
 
 //exportar userRoutes 
