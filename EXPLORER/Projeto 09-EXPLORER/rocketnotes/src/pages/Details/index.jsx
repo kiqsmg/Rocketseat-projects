@@ -1,12 +1,11 @@
-
-import "./styles.css";
+import { Continer} from './styles';
 
 export function Details() {
-  return (
-    <div>
-      <h1>Hello World!</h1>
-      <span>Rodrigo Gonçalves</span>
-    </div>
 
-  )
+    return (
+        <Cointer>
+            <h1>Hello World!</h1>
+            <span>Rodrigo Gonçalves</span>
+        </Cointer>
+    )
 }
