@@ -1,11 +1,15 @@
-import { Continer} from './styles';
+import { Container } from './styles';
+
+import { Button } from '../../components/Button';
 
 export function Details() {
 
     return (
-        <Cointer>
+        <Container>
             <h1>Hello World!</h1>
             <span>Rodrigo Gonçalves</span>
-        </Cointer>
+
+            <Button></Button>
+        </Container>
     )
 }
