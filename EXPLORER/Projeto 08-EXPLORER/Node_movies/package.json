@@ -4,13 +4,16 @@
   "description": "Movies API for Rocketset project",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src/server.js"
-
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "keywords": [],
   "author": "Caique Sales de Miranda Gomes",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
