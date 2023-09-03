@@ -63,6 +63,9 @@ export const Search = styled.div`
 
 export const Content = styled.div` 
     grid-area: content;
+    padding: 0 64px;
+    overflow-y: auto; //quando o conteudo não caber mais no sentido y, vira scroll, s enão fica sem scroll
+    
 `;
 
 export const NewNote = styled.button` 
