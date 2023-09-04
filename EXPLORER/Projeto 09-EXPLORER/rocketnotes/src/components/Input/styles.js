@@ -12,7 +12,7 @@ export const Container = styled.div`
 
     > input {
         height: 56px;
-        width: 100%auto;
+        width: 100%;
 
         padding: 12px;
 
@@ -20,7 +20,7 @@ export const Container = styled.div`
         background: transparent;
         border: 0;
 
-        &:placeholer {
+        &::placeholder {
             color: ${({ theme }) => theme.COLORS.GRAY_300};
         }
 
