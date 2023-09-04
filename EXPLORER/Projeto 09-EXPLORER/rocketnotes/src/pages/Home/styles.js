@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 export const Container = styled.div` 
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     display: grid;
     grid-template-columns: 250px auto;
@@ -15,7 +16,6 @@ export const Container = styled.div`
     "newnote content";
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-
 `;
 
 export const Brand = styled.div` 
@@ -68,6 +68,19 @@ export const Content = styled.div`
     
 `;
 
-export const NewNote = styled.button` 
+export const NewNote = styled(Link)` 
     grid-area: newnote;
+
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        margin-right: 8px;
+    }
+
 `;
